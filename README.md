@@ -1,7 +1,5 @@
 ## Installation steps:
-1. `helm upgrade -f nginx-ingress-controller-values.yaml --install ingress-nginx ingress-nginx \
-  --repo https://kubernetes.github.io/ingress-nginx \
-  --namespace ingress-nginx --create-namespace`
+1. `helm upgrade -f nginx-ingress-controller-values.yaml --install ingress-nginx ingress-nginx --repo https://kubernetes.github.io/ingress-nginx --namespace ingress-nginx --create-namespace`
 2. `helm repo add prometheus-community https://prometheus-community.github.io/helm-charts`
 3. `helm repo update`
 4. `helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack -f kube-prometheus-stack-values.yaml`
